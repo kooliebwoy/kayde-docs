@@ -2,7 +2,6 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightThemeBlack from 'starlight-theme-black';
-import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +10,7 @@ export default defineConfig({
         plugins: [
             starlightThemeBlack({
               navLinks: [{ // optional
-                label: 'Docs',
+                label: 'Getting Started',
                 link: '/getting-started',
               }],
               footerText: //optional
@@ -19,7 +18,7 @@ export default defineConfig({
            })
           ],
           title: 'Docs',
-          logo: { src: '/src/assets/kade-logo.png', alt: 'Kayde logo' },
+          logo: { src: '/src/assets/kayde-logo-lg.png', alt: 'Kayde logo' },
           social: [],
           defaultLocale: 'root',
           sidebar: [
@@ -61,8 +60,4 @@ export default defineConfig({
           ],
       }),
 	],
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
 });
