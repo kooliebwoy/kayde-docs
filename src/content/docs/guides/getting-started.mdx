@@ -1,0 +1,151 @@
+---
+title: Quick Start Guide
+description: Get up and running with Kayde in minutes. Create your first website and start building.
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+# Quick Start Guide
+
+Get your first Kayde website live in under 5 minutes. This guide will walk you through creating an account, building your first site, and publishing it to the web.
+
+## Prerequisites
+
+- A modern web browser
+- Email address for account creation
+- Basic understanding of web concepts (helpful but not required)
+
+## Step 1: Create Your Account
+
+1. **Sign up at [builder.kayde.io](https://builder.kayde.io)**
+   ```
+   https://builder.kayde.io/app/connect
+   ```
+
+2. **Verify your email** - Check your inbox and click the verification link
+
+3. **Complete your profile** - Add your name and choose a username
+
+## Step 2: Create Your First Site
+
+1. **Click "New Site"** from your dashboard
+2. **Choose a template** or start from scratch
+3. **Select your site type:**
+   - **Landing Page** - Perfect for businesses and portfolios
+   - **Blog** - Content-focused sites with built-in CMS
+   - **E-commerce** - Online stores with payment integration
+   - **Custom** - Build anything with our visual editor
+
+## Step 3: Design Your Website
+
+### Using the Visual Editor
+
+<CardGrid>
+  <Card title="Drag & Drop" icon="setting">
+    Add components by dragging them from the sidebar onto your page
+  </Card>
+  <Card title="Customize" icon="pencil">
+    Click any element to edit text, colors, images, and styling
+  </Card>
+  <Card title="Responsive" icon="laptop">
+    Preview and adjust your design for mobile, tablet, and desktop
+  </Card>
+</CardGrid>
+
+### Popular Components
+
+- **Hero Sections** - Eye-catching headers with CTAs
+- **Feature Grids** - Showcase your products or services
+- **Contact Forms** - Collect leads and customer inquiries  
+- **Galleries** - Display images and portfolios
+- **Testimonials** - Build trust with customer reviews
+
+## Step 4: Add Content
+
+1. **Edit text** by clicking directly on any text element
+2. **Upload images** using the media manager
+3. **Create pages** from the Pages panel
+4. **Set up navigation** in the site settings
+
+### Content Management
+
+```javascript
+// Example: Adding dynamic content via API
+const response = await fetch('/api/content', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer your-api-key',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    title: 'Welcome to Kayde',
+    content: 'Your website content here...',
+    status: 'published'
+  })
+});
+```
+
+## Step 5: Configure Settings
+
+### Site Settings
+- **SEO** - Meta titles, descriptions, and social sharing
+- **Analytics** - Google Analytics, Facebook Pixel
+- **Forms** - Email notifications and integrations
+- **Performance** - Image optimization and caching
+
+### Domain Setup
+1. Choose a free `.kayde.io` subdomain, or
+2. Connect your custom domain (`yoursite.com`)
+3. SSL certificates are automatically provisioned
+
+## Step 6: Publish Your Site
+
+1. **Preview your site** using the preview button
+2. **Check for errors** in the validation panel  
+3. **Click "Publish"** to make your site live
+4. **Share your URL** - your site is now accessible worldwide
+
+## Next Steps
+
+<CardGrid>
+  <Card title="Advanced Features" icon="rocket">
+    Explore custom code, webhooks, and API integrations
+  </Card>
+  <Card title="E-commerce" icon="document">
+    Add products, payment processing, and inventory management
+  </Card>
+  <Card title="Team Collaboration" icon="group">
+    Invite team members and set up approval workflows
+  </Card>
+</CardGrid>
+
+## Common Use Cases
+
+### Business Website
+Perfect for restaurants, consultants, and service businesses
+- Contact forms and booking integration
+- Location maps and business hours
+- Customer testimonials and portfolios
+
+### E-commerce Store  
+Sell products online with built-in payment processing
+- Product catalogs and shopping cart
+- Stripe and PayPal integration
+- Inventory management and order tracking
+
+### Blog or Magazine
+Content-first sites with powerful CMS features
+- Rich text editor with media embedding
+- Category and tag organization
+- SEO optimization and social sharing
+
+## Getting Help
+
+- **Documentation** - Comprehensive guides and API reference
+- **Community Forum** - Ask questions and share tips
+- **Email Support** - Direct help from our team
+- **Video Tutorials** - Step-by-step video guides
+
+---
+
+**Ready to build?** [Start your free trial](https://builder.kayde.io) or continue with our [detailed tutorials](/guides/first-site/).
