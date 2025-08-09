@@ -1,6 +1,12 @@
 {
     "name": "kayde-docs",
     "compatibility_date": "2025-08-08",
+    "routes": [
+        {
+            "pattern": "docs.kayde.io",
+            "custom_domain": true
+        }
+    ],
     "assets": {
       "directory": "./dist"
     }
